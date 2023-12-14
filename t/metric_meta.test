@@ -1,0 +1,11 @@
+# setting test database name
+@use _internal;
+
+show metrics;
+
+select * from cpu 
+where host = '1.1.1' 
+group by idc 
+having sum(load)>10;
+
+select * from cpu;
