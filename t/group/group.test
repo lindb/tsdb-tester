@@ -1,0 +1,5 @@
+# setting test database name
+@use _internal;
+
+# test tag key not found
+select * from cpu group by host;
